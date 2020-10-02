@@ -1,7 +1,19 @@
 # webpack-test
 
-Repository to reproduce the issue described in this question:
+Repository to illustrate a bug where Webpack gets stuck at compiling.
 
-https://stackoverflow.com/questions/50375952/how-use-the-mini-css-extract-plugin-to-combine-imported-css-and-css-generated-fr
+Steps to reproduce:
 
-The whole node_modules directory is included, so after cloning the repository, simply running `npm run build` should be enough
+```
+npm i
+npm run webpack-dev
+```
+
+The issue is somehow related to the image being referenced in the `style.scss`
+file.
+
+Deleting the image or renaming it, fixes the issue.
+Setting `url: false` in the `css-loader` inside webpack.common.js, also fixes the
+issue
+
+
