@@ -1,0 +1,10 @@
+$assetsPath: '/public/dist/';
+
+body {
+  background: green;
+}
+
+.test {
+  background-image: url($assetsPath + 'images/asc.gif');
+}
+
