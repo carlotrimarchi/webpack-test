@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@wordpress/block-library": "^2.24.0",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.1.1",
     "cropperjs": "^1.5.9",
